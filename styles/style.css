@@ -1,0 +1,162 @@
+:root {
+  --color-1: hsl(50 100% 80%);
+  --color-font: hsl(0 0% 20%);
+  background-color: #202020;
+  font-family: Roboto, sans-serif;
+  padding: 3vw;
+  scroll-behavior: smooth;
+}
+
+.window {
+  background-color: white;
+  color: var(--color-font);
+  filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.3));
+  border-radius: 15px 15px 0 0;
+}
+
+
+/* WINDOW HEADER */
+.window--header {
+  background-color: hsl(220 10% 50%);
+  height: 20px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em .8em;
+}
+
+.balls {
+  display: flex;
+  gap: .5em;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.red {
+  background-color: hsl(0 100% 50%);
+}
+.yellow {
+  background-color: hsl(50 100% 50%);
+}
+.green {
+  background-color: hsl(120 100% 50%);
+}
+
+.my-logo-link {
+  align-self: stretch;
+}
+
+.my-logo {
+  height: 20px;
+}
+/* WINDOW HEADER - END */
+
+.window--main-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 3vw;
+}
+
+.window--main {
+  max-width: 75ch;
+}
+
+.window--main *:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: serif;
+}
+
+main h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  
+}
+
+/* Headings Shadow */
+h1::before,
+h2::before,
+h3::before {
+  content: "";
+  background-color: var(--color-1);
+
+  height: .5em;
+  max-width: 50vw;
+  border-radius: .1em;
+
+  position: absolute;
+  margin-top: 1ch;
+  margin-left: .5ch;
+  z-index: -1;
+}
+
+h1::before {
+  width: calc(var(--width) * 1.5);
+}
+
+h2::before {
+  width: var(--width);
+}
+
+h3::before {
+  width: calc(var(--width) * .7);
+}
+/* Headings Shadow - END */
+
+.window--main img {
+  max-width: 100%;
+  max-height: 20em;
+  width: 100%;
+  border-radius: 1em;
+  filter: drop-shadow(5px 5px 0 var(--color-1));
+  object-fit:cover;
+}
+
+figure {
+  font-size: .85rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+ol>li {
+  margin-bottom: 0.3rem;
+  list-style-type: upper-roman;
+}
+
+ol>li::marker {
+  font-weight: bold;
+}
+
+.window--footer {
+  background-color: var(--color-1);
+  font-weight: bold;
+  padding: .5em 2em;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.window--footer a {
+  color: var(--color-font);
+}
