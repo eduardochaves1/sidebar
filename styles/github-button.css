@@ -37,7 +37,7 @@
   font-size: 0;
   opacity: 0;
   transform: translateY(2px);
-  transition: 400ms ease-in-out;
+  transition: 500ms ease-out;
 }
 
 .github-floating-btn:hover .github-floating-text {
