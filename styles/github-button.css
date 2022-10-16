@@ -3,10 +3,10 @@
   box-shadow: 0 0 10px rgb(0 0 0 / .3);
   opacity: .8;
   border-radius: .5em;
-  padding: .6em;
+  padding: .9em;
 
   text-decoration: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
   color: whitesmoke;
   line-height: 1rem;
   
@@ -36,7 +36,6 @@
   margin: 0rem;
   font-size: 0;
   opacity: 0;
-  transform: translateY(2px);
   transition: 500ms ease-out;
 }
 
