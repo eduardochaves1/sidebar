@@ -21,7 +21,7 @@
 .github-floating-icon {
   height: 1.5rem;
   filter: brightness(100);
-  animation: spin 4s linear infinite;
+  animation: spin 4s ease-in-out infinite;
   transform: rotateY(1deg);
   transform-origin: center;
 }
