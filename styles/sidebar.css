@@ -109,7 +109,7 @@
 /* SIDEBAR FOOTER */
 
 
-/* ALL SIDEBAR CLOSED STYLING */
+/* SIDEBAR CLOSED STYLING */
 #sidebar.sidebar-closed {
   width: 75px;
 }
@@ -123,4 +123,4 @@
 #sidebar.sidebar-closed #sidebar--footer {
   justify-content: center;
 }
-/* ALL SIDEBAR CLOSED STYLING */
+/* SIDEBAR CLOSED STYLING */
