@@ -1,0 +1,126 @@
+#sidebar {
+  background-color: var(--color-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 230px;
+  
+  transition: width 500ms ease-in-out;
+  --menu-item--padding: .8em;
+}
+
+#sidebar .sidebar--container {
+  padding: var(--window--margin-top) 14px;
+  padding-bottom: 0;
+}
+
+#sidebar img[src$=".svg"] {
+  filter: saturate(0) brightness(1);
+}
+
+#sidebar button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#sidebar--header {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+}
+
+#sidebar--header .logo {
+  margin-left: var(--menu-item--padding);
+}
+
+/* SIDEBAR MENU */
+#sidebar--menu {
+  padding: 30px 0;
+  display: flex;
+}
+
+#sidebar--menu #menu-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#sidebar--menu li {
+  list-style: none;
+}
+
+#sidebar--menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1.1ch;
+  padding: var(--menu-item--padding);
+  width: 100%;
+  overflow: hidden;
+
+  text-decoration: 0;
+  color: var(--color-font-1);
+}
+
+#sidebar--menu .menu-item-active {
+  background-color: hsl(0 0% 100% / .6);
+  border-radius: .8em;
+}
+
+#sidebar--menu .menu-item--text {
+  transition: opacity 400ms ease-in-out;
+}
+/* SIDEBAR MENU */
+
+/* SIDEBAR FOOTER */
+#sidebar--footer {
+  background-color: hsl(0 0% 100% / .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .7em var(--menu-item--padding);
+  gap: 1.5em;
+  height: 3.8em;
+  line-height: 1rem;
+}
+
+#sidebar--footer .vet-container {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  transition: opacity 500ms ease-in-out;
+}
+
+#sidebar--footer .vet-picture {
+  height: 2.5em;
+  aspect-ratio: 1/1;
+  border-radius: .5em;
+  object-fit: cover;
+}
+
+#sidebar--footer .occupation {
+  font-size: .8rem;
+}
+
+#sidebar--footer .btn-logout {
+  line-height: 0;
+}
+/* SIDEBAR FOOTER */
+
+
+/* ALL SIDEBAR CLOSED STYLING */
+#sidebar.sidebar-closed {
+  width: 75px;
+}
+
+#sidebar.sidebar-closed #sidebar--header .logo,
+#sidebar.sidebar-closed #sidebar--footer .vet-container {
+  display: none;
+}
+
+#sidebar.sidebar-closed #sidebar--header,
+#sidebar.sidebar-closed #sidebar--footer {
+  justify-content: center;
+}
+/* ALL SIDEBAR CLOSED STYLING */
