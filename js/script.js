@@ -1,6 +1,8 @@
 const sidebar = document.querySelector('#sidebar');
-const btnHamburgerMenu = document.querySelector('#btn-hamburger');
+const btnHamburgerMenu = document.querySelectorAll('.btn-hamburger');
 
-btnHamburgerMenu.addEventListener('click', () => {
-  sidebar.classList.toggle('sidebar-closed');
+btnHamburgerMenu.forEach((e) => {
+  e.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-closed');
+  })
 })
